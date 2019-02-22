@@ -160,4 +160,8 @@ export default class App extends Vue {
 #SurveyTabs .v-tabs__container {
   display: none !important;
 }
+
+body {
+  font-family: 'Microsoft YaHei';
+}
 </style>
