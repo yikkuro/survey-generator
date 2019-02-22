@@ -1,0 +1,77 @@
+[
+	{
+		"ID": 0,
+		"question": "start question",
+		"answers": [
+			{
+				"text": "Rdirect to Q1",
+				"redirectID": 1
+			},
+			{
+				"text": "Rdirect to Q2",
+				"redirectID": 2
+			},
+			{
+				"text": "Rdirect to Q3",
+				"redirectID": 3
+			}
+		]
+	},
+	{
+		"ID": 1,
+		"question": "Question 1",
+		"answers": [
+			{
+				"text": "Rdirect to Q2",
+				"redirectID": 2
+			},
+			{
+				"text": "Rdirect to End",
+				"redirectID": 10
+			}
+		]
+	},
+	{
+		"ID": 2,
+		"question": "Question 2",
+		"answers": [
+			{
+				"text": "Rdirect to Q3",
+				"redirectID": 3
+			},
+			{
+				"text": "Rdirect to End",
+				"redirectID": 10
+			}
+		]
+	},
+	{
+		"ID": 3,
+		"question": "Question 3",
+		"answers": [
+			{
+				"text": "Rdirect to Q4",
+				"redirectID": 4
+			},
+			{
+				"text": "Rdirect to End",
+				"redirectID": 10
+			}
+		]
+	},
+	{
+		"ID": 4,
+		"question": "Question 4",
+		"answers": [
+			{
+				"text": "Rdirect to End",
+				"redirectID": 10
+			}
+		]
+	},
+	{
+		"ID": 10,
+    "question": "End of Survey",
+    "answers": []
+	}
+]
