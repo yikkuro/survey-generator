@@ -89,11 +89,6 @@ export default class App extends Vue {
     super();
   }
 
-  public resetSurvey() {
-    this.surveyData = [];
-    this.startOver();
-  }
-
   public startOver() {
     this.currentSurvey = 0;
     this.traceStack = [];
@@ -105,6 +100,7 @@ export default class App extends Vue {
   }
 
   public handleFileUpload() {
+    this.surveyData = [];
     const refFile = this.$refs.upload as any;
     const inputFile = refFile.files[0] as File;
     const formData = new FormData();
@@ -121,10 +117,10 @@ export default class App extends Vue {
           if (!data.length || data.length === 0) {
             throw new Error('Empty data');
           }
-          this.resetSurvey();
           for (const unit of data) {
             this.surveyData.push(new Survey(unit));
           }
+          this.startOver();
         } catch (e) {
           this.errorMessage = e;
           this.errorDialogModel = true;
@@ -146,7 +142,6 @@ export default class App extends Vue {
         params.text,
       ),
     );
-
     this.currentSurvey = this.IDtoTabModel(params.redirectID);
   }
 
