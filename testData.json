@@ -1,77 +1,143 @@
-[
+﻿[
 	{
 		"ID": 0,
-		"question": "start question",
+		"question": "您吃了吗",
 		"answers": [
 			{
-				"text": "Rdirect to Q1",
+				"text": "吃了",
 				"redirectID": 1
 			},
 			{
-				"text": "Rdirect to Q2",
-				"redirectID": 2
+				"text": "没吃",
+				"redirectID": 7
 			},
 			{
-				"text": "Rdirect to Q3",
-				"redirectID": 3
-			}
-		]
-	},
-	{
-		"ID": 1,
-		"question": "Question 1",
-		"answers": [
-			{
-				"text": "Rdirect to Q2",
-				"redirectID": 2
-			},
-			{
-				"text": "Rdirect to End",
+				"text": "你管得着吗",
 				"redirectID": 10
 			}
 		]
 	},
-	{
-		"ID": 2,
-		"question": "Question 2",
-		"answers": [
-			{
-				"text": "Rdirect to Q3",
-				"redirectID": 3
-			},
-			{
-				"text": "Rdirect to End",
-				"redirectID": 10
-			}
-		]
-	},
-	{
-		"ID": 3,
-		"question": "Question 3",
-		"answers": [
-			{
-				"text": "Rdirect to Q4",
-				"redirectID": 4
-			},
-			{
-				"text": "Rdirect to End",
-				"redirectID": 10
-			}
-		]
-	},
-	{
-		"ID": 4,
-		"question": "Question 4",
-		"answers": [
-			{
-				"text": "Rdirect to End",
-				"redirectID": 10
-			}
-		]
-	},
+  {
+    "ID": 1,
+    "question": "吃的嘛呀",
+    "answers": [
+      {
+        "text": "鸡蛋灌饼",
+        "redirectID": 2
+      },
+      {
+        "text": "小葱蘸酱",
+        "redirectID": 5
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "question": "几个鸡蛋",
+    "answers": [
+      {
+        "text": "1个",
+        "redirectID": 3
+      },
+      {
+        "text": "2个",
+        "redirectID": 3
+      },
+      {
+        "text": "10个",
+        "redirectID": 6
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "question": "好吃吗",
+    "answers": [
+      {
+        "text": "好吃",
+        "redirectID": 4
+      },
+      {
+        "text": "不好吃",
+        "redirectID": 4
+      },
+      {
+        "text": "你管得着吗",
+        "redirectID": 10
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "question": "您还吃吗",
+    "answers": [
+      {
+        "text": "吃",
+        "redirectID": 10
+      },
+      {
+        "text": "不吃",
+        "redirectID": 10
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "question": "几颗葱呀",
+    "answers": [
+      {
+        "text": "1颗",
+        "redirectID": 3
+      },
+      {
+        "text": "2颗",
+        "redirectID": 3
+      },
+      {
+        "text": "10颗",
+        "redirectID": 6
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "question": "您是猪吗",
+    "answers": [
+      {
+        "text": "是",
+        "redirectID": 10
+      },
+      {
+        "text": "不是",
+        "redirectID": 10
+      },
+      {
+        "text": "滚",
+        "redirectID": 10
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "question": "您是没钱吃饭吗",
+    "answers": [
+      {
+        "text": "是",
+        "redirectID": 10
+      },
+      {
+        "text": "不是",
+        "redirectID": 10
+      },
+      {
+        "text": "滚",
+        "redirectID": 10
+      }
+    ]
+  },
 	{
 		"ID": 10,
-    "question": "End of Survey",
+    "question": "调查结束，谢谢老板",
     "answers": []
 	}
 ]

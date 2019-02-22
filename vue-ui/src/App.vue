@@ -3,6 +3,11 @@
     <v-toolbar app>
       <v-toolbar-title class="headline">SURVEY GENERATOR</v-toolbar-title>
       <v-spacer></v-spacer>
+      <!-- <v-btn
+        flat
+        @click="chinese = !chinese"
+        :color="chinese ? 'orange' : ''"
+      >{{chinese ? 'English' : '中文'}}</v-btn>-->
       <v-btn outline :disabled="!surveyData.length" @click="startOver">start over</v-btn>
       <v-btn color="warning" outline @click="redirectUpload">choose file</v-btn>
       <input style="display: none;" type="file" ref="upload" @change="handleFileUpload()">
@@ -37,7 +42,12 @@
           <v-card-title class="headline success" primary-title>Results</v-card-title>
           <!-- <v-card-text>{{traceStack}}</v-card-text> -->
           <v-timeline dense>
-            <v-timeline-item small color="success" v-for="unit in traceStack" :key="unit.QuestionID">
+            <v-timeline-item
+              small
+              color="success"
+              v-for="unit in traceStack"
+              :key="unit.QuestionID"
+            >
               <v-card class="mr-5">
                 <v-card-title class="title success">{{unit.QuestionText}}</v-card-title>
                 <v-card-text>
@@ -73,6 +83,8 @@ export default class App extends Vue {
   public errorDialogModel: boolean = false;
   public resultDialogModel: boolean = false;
   public currentSurvey: number = 0;
+  public chinese: boolean = false;
+
   constructor() {
     super();
   }
